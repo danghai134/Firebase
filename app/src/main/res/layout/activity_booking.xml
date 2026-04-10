@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvBookingMovieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Phim"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MÀN HÌNH"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginBottom="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSeats"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <View android:layout_width="20dp" android:layout_height="20dp" android:background="#4CAF50"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Trống  " />
+
+        <View android:layout_width="20dp" android:layout_height="20dp" android:background="#F44336"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Đã đặt  " />
+
+        <View android:layout_width="20dp" android:layout_height="20dp" android:background="#2196F3"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Đang chọn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSelectedSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ghế đã chọn: Chưa chọn"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 0 VNĐ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnConfirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Xác Nhận Đặt Vé" />
+
+</LinearLayout>
